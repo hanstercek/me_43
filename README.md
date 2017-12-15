@@ -7,6 +7,6 @@
 ##### Execution Syntax:
 ```
 ssh user@rematerials.local
-Password: ****
+>> Password: ****
 python runTest.py <iterations>
 ```
