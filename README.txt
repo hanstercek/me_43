@@ -15,6 +15,14 @@ The ModRooster impact tester was designed by Tufts University ME-43 students
 ################################################################################
 #				   HOW TO RUN				       #
 ################################################################################
+LOCAL ACCESS:
+    Login credentials:
+	username: user
+	password: rematerials
+	    Note: Password will not display as it is being typed in. Hit 'enter'
+		  once password entry is completed.
+
+REMOTE ACCESS:
     To execute, user should make sure they are SSH'ed into the Raspberry Pi
     Note: SSH is a standard method of connecting to devices that are on the same
 	  WiFi network. To SSH, make sure you are connected to the following
@@ -29,19 +37,24 @@ The ModRooster impact tester was designed by Tufts University ME-43 students
 	  Windows: 'Putty' SSH client is a popular method of SSHing in Windows.
 		    It can be found for free online. Follow online instructions
 		    to set-up.
-
-    In your preferred console, execute the following commands to run tests:
+    To SSH, complete the following commands:
 	ssh user@rematerials.local
-	cd ~/Desktop
-	./runTestTimed.py <iterations>
-
-    Note: <iterations> is the desired number of tests to be run. If no value
-	  is specified, the script will use the fallback base number of tests.
-	  Input will be verified before progressing with the testing.
+	password: rematerials
 
     SSH Details (for reference):
     Username:	   'user@rematerials.local'
     Password:	   'rematerials'
+
+PROGRAM EXECUTION:
+    From console, execute the following command from the home directory. No
+	directory navigation should be necessary:
+
+        ./runTestTimed.py <iterations>
+
+    Note: <iterations> is the desired number of tests to be run. If no value
+	  s specified, the script will use the fallback base number of tests.
+	  Input will be verified before progressing with the testing.
+
 
 ################################################################################
 #				INCLUDED FILES				       #
